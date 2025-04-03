@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7: Javascript Events</title>
+</head>
+<body>
+
+    <header>
+        <h1>Javascript Events</h1>
+    </header>
+
+    <!--Button-->
+    <div class="container">
+        <h2>Mouse Events</h2>
+        <button class="hover-btn" id="hover-btn">Hover this button</button>
+        <p class="message" id="mouseMessage"></p>
+    </div>
+
+    <!--Keyboard Events-->
+    <div class="container">
+        <h2>Keyboard Events</h2>
+        <input type="text" id="keyInput" placeholder="Type something →HERE←">
+        <p class="message">LAST KEY PRESSED: <span class="keyDisplay" id="keyDisplay"></span></p>
+    </div>
+    
+    <!--Form-->
+    <div class="container">
+        <h2>Form Events</h2>
+        <form action="#" id="formEvent">
+            <input type="text" name="firstname" id="firstname" placeholder="First Name:">
+            <button type="submit">Submit!</button>
+        </form>
+        <p class="message" id="formMessage"></p>
+    </div>
+
+    <!--Focus/Blur Events-->
+    <div class="container">
+        <h2>Focus/Blur Events</h2>
+        <input type="text" name="focusEvent" id="focusEvent" placeholder="Click here to see MAGIC!">
+        <p class="message" id="focusMessage"></p>
+    </div>
+
+    <!--Event Delegation-->
+    <div class="container">
+        <h2>Event Delegation</h2>
+        <div id="multiple-btn">
+            <button>Button Uno</button>
+            <button>Button Dos</button>
+            <button>Button Tres</button>
+        </div>
+        <p class="message">You Clicked: <span id="delegateMessage"></span></p>
+    </div>
+
+</body>
+</html>
