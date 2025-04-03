@@ -20,4 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     keyInput.addEventListener('keyup', (x) => {
         keyDisplay.textContent = x.key;
     });
+
+    // Form Events
+    const formEvent = document.getElementById('formEvent');
+    const formMessage = document.getElementById('formMessage');
+
+    formEvent.addEventListener('submit', (y) => {
+        y.preventDefault(); //So page does not reload
+        formMessage.textContent = "Form has been submitted!"
+    })
 });
