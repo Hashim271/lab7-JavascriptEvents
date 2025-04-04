@@ -31,3 +31,20 @@ button {
     margin-top: 10px;
     font-weight: bolder;
 }
+
+button:hover {
+    background-color: #d1cecebd;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="text"]:focus {
+    border-color: #2d545e;
+    outline: none;
+}
