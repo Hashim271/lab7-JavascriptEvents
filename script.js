@@ -29,4 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
         y.preventDefault(); //So page does not reload
         formMessage.textContent = "Form has been submitted!"
     })
+
+    // Focus/Blur Events
+    const focusEventInput = document.getElementById('focusEvent');
+    const focusMessage = document.getElementById('focusMessage');
+
+    focusEventInput.addEventListener('focus', () => {
+        focusMessage.textContent = "Input field is so FOCUSED!";
+    });
+
+    focusEventInput.addEventListener('blur', () => {
+        focusMessage.textContent = "Input field is so BLURRED!";
+    });
 });
