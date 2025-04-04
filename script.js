@@ -41,4 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
     focusEventInput.addEventListener('blur', () => {
         focusMessage.textContent = "Input field is so BLURRED!";
     });
+
+    // Event Delegation
+    const multipleBtnContainer = document.getElementById('multiple-btn');
+    const delegateMessage = document.getElementById('delegateMessage');
+
+    multipleBtnContainer.addEventListener('click', (z) => {
+        if (z.target.tagName === "BUTTON") {
+            delegateMessage.textContent = z.target.textContent;
+        }
+    });
 });
